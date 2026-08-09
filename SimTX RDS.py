@@ -27,7 +27,7 @@ class MPXStreamerGUI:
 
 
     dev_frame = tk.LabelFrame(
-        root, text=" Set to stereo tool output ", padx=10, pady=10
+        root, text=" Set to stereo tool output, set simtx bandwidth to 384000. ", padx=10, pady=10
     )
     dev_frame.pack(fill="x", padx=15, pady=5)
 
