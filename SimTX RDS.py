@@ -126,7 +126,7 @@ class MPXStreamerGUI:
   def stream_worker(self, device_idx):
     TCP_IP = "127.0.0.1"
     TCP_PORT = 1000
-    SAMPLE_RATE = 192000
+    SAMPLE_RATE = 384000
     MAX_DEVIATION = 75000.0
 
     fm_sensitivity = 2.0 * np.pi * MAX_DEVIATION / SAMPLE_RATE
