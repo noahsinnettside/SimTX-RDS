@@ -27,7 +27,7 @@ class MPXStreamerGUI:
 
 
     dev_frame = tk.LabelFrame(
-        root, text=" Set to stereo tool output, set simtx bandwidth to 384000. ", padx=10, pady=10
+        root, text=" Set to stereo tool output, set simtx bandwidth to 192000. ", padx=10, pady=10
     )
     dev_frame.pack(fill="x", padx=15, pady=5)
 
@@ -126,7 +126,7 @@ class MPXStreamerGUI:
   def stream_worker(self, device_idx):
     TCP_IP = "127.0.0.1"
     TCP_PORT = 1000
-    SAMPLE_RATE = 384000
+    SAMPLE_RATE = 192000
     MAX_DEVIATION = 75000.0
 
     fm_sensitivity = 2.0 * np.pi * MAX_DEVIATION / SAMPLE_RATE
