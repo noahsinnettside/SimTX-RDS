@@ -25,7 +25,7 @@ class MPXStreamerGUI:
         font=("Arial", 11, "bold"),
     ).pack(pady=10)
 
-    # Audio Selector
+
     dev_frame = tk.LabelFrame(
         root, text=" Set to stereo tool output ", padx=10, pady=10
     )
@@ -38,7 +38,7 @@ class MPXStreamerGUI:
         dev_frame, text="Refresh Devices", command=self.refresh_audio_devices
     ).pack(anchor="e")
 
-    # Controls
+
     ctrl_frame = tk.Frame(root, pady=15)
     ctrl_frame.pack(fill="x", padx=15)
 
@@ -146,7 +146,7 @@ class MPXStreamerGUI:
           if len(mpx_data) == 0:
             continue
 
-          # Direct audio pass-through from Stereo Tool (which already contains MPX + Pilot + RDS + RDS2)
+
           phase = np.cumsum(mpx_data * fm_sensitivity)
           iq_data = np.exp(1j * phase).astype(np.complex64)
 
